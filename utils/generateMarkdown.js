@@ -29,6 +29,7 @@ function renderLicenseSection(license) {
     return '';
   }
   return `
+  <br/>
   ## License
   ![badge](https://img.shields.io/badge/license-${userResponse.license}-informational) <br />
   `;
@@ -74,7 +75,7 @@ function generateMarkdown(userResponse) {
   
   Any questions, comments or concerns, reach out at ${userResponse.email}.
 
-  Git hub available at: [${userResponse.userName}](https://github.com/${userResponse.repo})
+  Git hub available at: [${userResponse.userName}](https://github.com/${userResponse.userName})
 
 
   
