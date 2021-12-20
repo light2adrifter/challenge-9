@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const { userInfo } = require('os');
+
 
 //Creates an array of questions for user input
 const questions = [
@@ -52,7 +52,6 @@ const questions = [
         type: 'input',
         message: 'What is the title of your project?',
         name: 'title',
-        default: 'Project title name',
         validate: input => {
             if (input) {
                 return true;
@@ -66,7 +65,6 @@ const questions = [
         type: 'input',
         message: 'Write a description of your project.',
         name: 'description',
-        default: 'Project description',
         validate: input => {
             if (input) {
                 return true;
@@ -86,13 +84,16 @@ const questions = [
     {
         type:'input',
         message: 'Provide instructions and examples for use.',
-        name: 'usage'
+        name: 'usage',
+        default: 'node.js'
     },
 
     {
         type: 'input',
         message: 'Provide guidelines on how to contriubute.',
-        name: 'contribution'
+        name: 'contribution',
+        default: 'No need to contribute.'
+
     },
 
     {
@@ -103,14 +104,14 @@ const questions = [
     },
 
     {
-        type: 'confrim',
-        name: 'confirmlicense',
-        message: 'Would you like to enter a liceense?',
+        type: 'confirm',
+        name: 'confirmLicense',
+        message: 'Would you like to enter a license?',
         default: true
     },
 
     {
-        type: 'list',
+        type: 'checkbox',
         name: 'license',
         message: 'Select a license for your project.',
         choices: ['MIT', 'Apache', 'ISC', 'AFL'],
@@ -130,11 +131,11 @@ function writeToFile(fileName, data) {
         if(err){
             return console.log(err);
         }
-        console.log('Your README.md has succesfully been crated!')
+        console.log('Your README.md has succesfully been created!')
     });
 };
 
-const writeFileAsync = (writeToFile)
+const writeFile = (writeToFile)
 
 //Function to initialize app
 async function init() {
@@ -142,7 +143,7 @@ async function init() {
     generateContent = generateMarkdown(userResponse);
     
     // Writes markdown file
-    writeFileAsync('./dist/README.md', generateContent);
+    writeFile('./dist/README.md', generateContent);
 }
 
 // Function call to initialize app
