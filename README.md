@@ -27,7 +27,7 @@
   
   ## Usage!
   
-  [Uploading Untitled_ Dec 20, 2021 1_37 AM (2).gif…]()
+  ![App Demo](./readme-gif/demo.gif)
 
   node.js to begin the prompts. After the prompts are complete, the README.md file will be placed within the dist folder.
   
