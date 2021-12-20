@@ -17,7 +17,7 @@ function renderLicenseLink (license) {
     return '';
   }
   return `
-  -[Liscense](#liscense) <br/>
+  -[Liscense](#liscense)
   `;
 
 }
@@ -46,7 +46,7 @@ function generateMarkdown(userResponse) {
   ## Table of Contents
   -[Description](#description) <br/>
   -[Installation](#installation) <br/>
-  -[Usage](#usage) <br/>
+  -[Usage](#usage)
   ${renderLicenseLink(userResponse.license)}
   -[Contribution](#contribution) <br/>
   -[Tests](#tests) <br/>
