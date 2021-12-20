@@ -1,14 +1,15 @@
-// TODO: Include packages needed for this application
+//Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
+const { userInfo } = require('os');
 
-// TODO: Create an array of questions for user input
+//Creates an array of questions for user input
 const questions = [
     {
         type: 'input',
         message: 'What is your Github username?',
-        name: 'gitHub',
+        name: 'userName',
         validate: input => {
             if (input) {
                 return true;
@@ -78,7 +79,8 @@ const questions = [
     {
         type:'input',
         message: 'Steps required to install your project.',
-        name: 'install'
+        name: 'install',
+        default: 'npm install'
     },
 
     {
@@ -90,24 +92,39 @@ const questions = [
     {
         type: 'input',
         message: 'Provide guidelines on how to contriubute.',
-        name: 'contributes'
+        name: 'contribution'
     },
 
     {
         type:'input',
         message:'Provide tests writtten for your application if any.',
-        name: 'contribute'
+        name: 'tests',
+        default: 'N/A'
+    },
+
+    {
+        type: 'confrim',
+        name: 'confirmlicense',
+        message: 'Would you like to enter a liceense?',
+        default: true
     },
 
     {
         type: 'list',
-        message: 'Select a license for your project.',
         name: 'license',
-        choices: ['MIT', 'Apache', 'ISC', 'AFL']
+        message: 'Select a license for your project.',
+        choices: ['MIT', 'Apache', 'ISC', 'AFL'],
+        when: ({ confirmLicense }) => {
+            if (confirmLicense) {
+                return true;
+            }else {
+                return false;
+            }
+        }
     }
 ];
 
-// TODO: Create a function to write README file
+//Function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err =>{
         if(err){
@@ -117,9 +134,15 @@ function writeToFile(fileName, data) {
     });
 };
 
-// TODO: Create a function to initialize app
-function init() {
-    userResponse = inquirer.prompt(questions);
+const writeFileAsync = (writeToFile)
+
+//Function to initialize app
+async function init() {
+    userResponse = await inquirer.prompt(questions);
+    generateContent = generateMarkdown(userResponse);
+    
+    // Writes markdown file
+    writeFileAsync('./dist/README.md', generateContent);
 }
 
 // Function call to initialize app
