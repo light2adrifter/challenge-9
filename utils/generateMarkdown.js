@@ -37,7 +37,7 @@ function renderLicenseSection(license) {
 //Creates a function to generate markdown for README
 function generateMarkdown(userResponse) {
   return `
-  <h1>${userResponse.title}</h>
+  <h1>${userResponse.title}</h1>
 
   ${renderLicenseBadge(userResponse.license)}
 
@@ -78,7 +78,7 @@ function generateMarkdown(userResponse) {
   
   Any questions, comments or concerns, reach out at ${userResponse.email}.
 
-  Git hub available at: [${userResponse.userName}](https://github.com/${userResponse.userName})
+  Git hub available at: [${userResponse.userName}](https://github.com/${userResponse.userName}/${userResponse.repo}).
 
 
   
