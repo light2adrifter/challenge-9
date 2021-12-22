@@ -1,6 +1,8 @@
 
-  <h1>readme gen</h1>
+  <h1>README GEN TEST</h1>
 
+  
+  ![badge](https://img.shields.io/badge/license-MIT-informational) <br />
   
 
   
@@ -11,6 +13,8 @@
 
   -[Usage](#usage) <br/>
   
+  -[License](#license) <br/>
+  
   -[Contribution](#contribution) <br/>
 
   -[Tests](#tests) <br/>
@@ -20,7 +24,7 @@
 
   ## Description
 
-  creates a readme
+  Creates a README.md quickly by accepting user inputs. Will then create the file in the dist folder.
   
   ## Installation
   npm install
@@ -28,6 +32,9 @@
   ## Usage
   node.js
   
+  ## License
+  
+  ![badge](https://img.shields.io/badge/license-MIT-informational)
   
   
   ## Contribution
