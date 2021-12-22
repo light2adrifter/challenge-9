@@ -28,6 +28,8 @@
   ## Usage!
   
   ![App Demo](./readme-gif/demo.gif)
+  
+  https://watch.screencastify.com/v/fDeNpl6YifpzEybaSI57
 
   node.js to begin the prompts. After the prompts are complete, the README.md file will be placed within the dist folder.
   
