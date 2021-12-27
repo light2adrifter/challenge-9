@@ -1,7 +1,9 @@
 
   <h1>README GEN</h1>
 
-  
+
+  ![badge](https://img.shields.io/badge/license-MIT-informational) <br />
+
 
   
   ## Table of Contents
@@ -10,6 +12,8 @@
   -[Installation](#installation) <br/>
 
   -[Usage](#usage) <br/>
+
+  -[License](#license) <br/>
   
   -[Contribution](#contribution) <br/>
 
@@ -25,7 +29,7 @@
   ## Installation
   npm install
   
-  ## Usage!
+  ## Usage
   
   ![App Demo](./readme-gif/demo.gif)
   
@@ -33,6 +37,10 @@
 
   node.js to begin the prompts. After the prompts are complete, the README.md file will be placed within the dist folder.
   
+  
+  ## License
+  
+  This was created under the MIT license.
   
   
   ## Contribution

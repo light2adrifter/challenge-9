@@ -30,7 +30,7 @@ function renderLicenseSection(license) {
   }
   return `## License
   
-  This was created under ${userResponse.license}.
+  This was created under the ${userResponse.license} license.
   `;
 }
 

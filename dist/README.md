@@ -1,5 +1,5 @@
 
-  <h1>README GEN TEST</h1>
+  <h1>g</h1>
 
   
   ![badge](https://img.shields.io/badge/license-MIT-informational) <br />
@@ -24,17 +24,17 @@
 
   ## Description
 
-  Creates a README.md quickly by accepting user inputs. Will then create the file in the dist folder.
+  f
   
   ## Installation
-  npm install
+  s
   
   ## Usage
   node.js
   
   ## License
   
-  ![badge](https://img.shields.io/badge/license-MIT-informational)
+  This was created under the MIT license.
   
   
   ## Contribution
@@ -45,9 +45,9 @@
   
   ## Questions
   
-  Any questions, comments or concerns, reach out at light2adrifter@yahoo.com.
+  Any questions, comments or concerns, reach out at d.
 
-  Git hub available at: [light2adrifter](https://github.com/light2adrifter/challenge-9).
+  Git hub available at: [light2adrifter](https://github.com/light2adrifter/f).
 
 
   
