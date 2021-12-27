@@ -30,7 +30,7 @@ function renderLicenseSection(license) {
   }
   return `## License
   
-  ![badge](https://img.shields.io/badge/license-${userResponse.license}-informational)
+  This was created under ${userResponse.license}.
   `;
 }
 
