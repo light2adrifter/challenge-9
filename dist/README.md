@@ -1,5 +1,5 @@
 
-  <h1>g</h1>
+  <h1>weather app</h1>
 
   
   ![badge](https://img.shields.io/badge/license-MIT-informational) <br />
@@ -24,13 +24,13 @@
 
   ## Description
 
-  f
+  An app to quickly look at the weather forcast for a particular area.
   
   ## Installation
-  s
+  Open the browser
   
   ## Usage
-  node.js
+  N/A
   
   ## License
   
@@ -45,9 +45,9 @@
   
   ## Questions
   
-  Any questions, comments or concerns, reach out at d.
+  Any questions, comments or concerns, reach out at light2adrifter@yahoo.com.
 
-  Git hub available at: [light2adrifter](https://github.com/light2adrifter/f).
+  Git hub available at: [light2adrifter](https://github.com/light2adrifter/weather-togo-outside).
 
 
   
