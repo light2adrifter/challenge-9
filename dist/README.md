@@ -1,5 +1,5 @@
 
-  <h1>weather app</h1>
+  <h1>Back-End-Bonanza: Ecommerce Edition</h1>
 
   
   ![badge](https://img.shields.io/badge/license-MIT-informational) <br />
@@ -24,13 +24,13 @@
 
   ## Description
 
-  An app to quickly look at the weather forcast for a particular area.
+  An application that handles api calls following CRUD. Includes a database and seeds.
   
   ## Installation
-  Open the browser
+  npm install
   
   ## Usage
-  N/A
+  Set up database using 'source db/schema.sql' within mysql, then seed the database with 'npm run seeds'. Use insomnia to test api endpoints.
   
   ## License
   
@@ -47,7 +47,7 @@
   
   Any questions, comments or concerns, reach out at light2adrifter@yahoo.com.
 
-  Git hub available at: [light2adrifter](https://github.com/light2adrifter/weather-togo-outside).
+  Git hub available at: [light2adrifter](https://github.com/light2adrifter/back-end-bonanza).
 
 
   
